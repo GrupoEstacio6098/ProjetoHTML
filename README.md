@@ -1,4 +1,4 @@
-.Separações
+.Separações  
 Pedro: [página principal] sobre nós e dúvidas frequentes  
 Felipe: [página principal] css, avaliações e eventos  
 Pedrin: [página funcionários] estoque e promoções  
