@@ -1,8 +1,8 @@
 .Separações
-Pedro: 
-Felipe:
-Pedrin:
-Matheus:
+Pedro: [página principal] sobre nós e dúvidas frequentes
+Felipe: [página principal] css, avaliações e eventos
+Pedrin: [página funcionários] estoque e promoções
+Matheus: [página login e criação] logins e ajuda
 
 
 
