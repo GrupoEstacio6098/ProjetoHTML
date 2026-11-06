@@ -4,14 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            font-size: larger;
+        }
+        .cadastro {
+            background-color: antiquewhite;
+            color: rgb(81, 22, 22);
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px gray;
+
+            height: 20vh;
+            width: 30vh;
+            margin: 10px auto;
+
+            display: none;
+        }
+        .opcao {
+            font-size: 1em;
+            padding: 10px;
+            margin: 10px auto;
+            max-width: 20vh;
+            background-color: lightyellow;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .opcao:hover {
+            background-color: darkorchid;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <h1>CriarConta</h1>
-    <a href="">criar conta de cliente</a>
-    <!--esse link vai mandar o usuario pra outra pagina html com uma tag form pra entrada de dados
-    depois direciona ele pra PaginaCliente.html-->
-    <a href="">criar conta de funcionario</a>
-    <!--esse link manda o usuario pra outra pagina html com tag form pra entrada de dados
-    depois direciona ele pra PaginaFuncionario.html-->
+    <div class="opcao">
+        <input type="radio" name="botaoCadastro" id="boxCaClienteID">
+        <label for="boxEnClienteID">Cadastrar Cliente</label><br>
+    </div>
+    <div class="opcao">
+        <input type="radio" name="botaoCadastro" id="boxCaFuncionarioID">
+        <label for="boxEnClienteID">Cadastrar Funcionário</label>
+    </div>
+    <div>
+        <form action="C:\Users\jo1sa\OneDrive\Documentos\projeto\cadastro\CriarCliente.php" method="post" class="cadastro caCliente">
+
+            <input type="submit" value="Criar Conta">
+        </form>
+    </div>
+
+    
+    <div>
+        <form action="C:\Users\jo1sa\OneDrive\Documentos\projeto\cadastro\CriarFuncionário.php" method="post" class="cadastro caFuncionario">
+
+            <input type="submit" value="Criar Conta">
+        </form>
+    </div>
+    <a href="index-1.html">Página Inicial</a>
 </body>
 </html>
