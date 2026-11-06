@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>Estoque</title>
+  <style>
+    .fora-de-estoque {
+      color: red;
+      font-weight: bold;
+    }
+    .em-estoque {
+      color: green;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 4px;
+      text-align: left;
+    }
+    input {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Estoque</h2>
+  <table id="tabela-estoque">
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Preço</th>
+        <th>Estoque</th>
+        <th>Promoção</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h2>Novo produto</h2>
+
+  <input id="nome" type="text" placeholder="Nome do produto">
+  <input id="preco" type="number" min="0" step="0.01" placeholder="Preço">
+  <input id="qtd" type="number" min="0" step="1" placeholder="Quantidade">
+
+  <button onclick="adicionarProduto()">Adicionar</button>
+
+  <script src="estoque.js"></script>
+
+</body>
+</html>
