@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <h1>Entrar</h1>
+
+    <input type="radio" name="botaoEntrada" id="boxEnClienteID">
+    <label for="boxEnClienteID">Entrar Como Cliente</label>
+    <input type="radio" name="botaoEntrada" id="boxEnFuncionarioID">
+    <label for="boxEnFuncionarioID">Entrar Como Funcionário</label>
+    <div>
+        <form action="C:\Users\jo1sa\OneDrive\Documentos\projeto\cadastro\EntrarCliente.php" method="post" class="cadastro enCliente">
+
+            <input type="submit" value="Entrar">
+        </form>
+    </div>
+
+    
+    <div>
+        <form action="C:\Users\jo1sa\OneDrive\Documentos\projeto\cadastro\EntrarFuncionario.php"method="post" class="cadastro enFuncionario">
+
+            <input type="submit" value="Entrar">
+        </form>
+    </div>
+
+    <a href="index-1.html">Página Inicial</a>
 </body>
 </html>

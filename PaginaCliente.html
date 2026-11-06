@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetLove | Área do cliente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: white;
+            color: dimgray;
+            text-align: center;
+            margin: 0;
+        }
+        header {
+            background-color: darkorchid;
+            color: white;
+            padding: 40px 20px;
+            box-shadow: 0 4px 10px pink;
+        }
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            margin: 0 0 15px 0;
+        }
+        nav a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px 6px;
+            padding: 8px 20px;
+            border: 2px solid white;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+        nav a:hover,
+        nav a:focus-visible {
+            background-color: rgb(59, 42, 77);
+            color: white;
+        }
+        section {
+            margin: 40px auto;
+            padding: 30px;
+            max-width: 700px;
+            border-radius: 20px;
+            box-shadow: 0 6px 15px pink;
+        }
+        h2 {
+            color: darkorchid;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: darkorchid;
+            margin: 0 0 8px 0;
+        }
+        form {
+            margin: 0 auto;
+        }
+        fieldset {
+            border: 2px solid pink;
+            border-radius: 15px;
+            margin: 0 auto 15px auto;
+            padding: 10px 20px 15px 20px;
+        }
+        legend {
+            color: darkorchid;
+            font-weight: bold;
+            padding: 0 8px;
+        }
+        fieldset label {
+            display: inline-block;
+            margin: 5px 10px;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="number"],
+        select {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            padding: 8px 12px;
+            border: 2px solid pink;
+            border-radius: 10px;
+            color: dimgray;
+        }
+        input[type="number"] {
+            width: 70px;
+        }
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: darkorchid;
+        }
+        input:disabled {
+            background-color: #f1f1f1;
+            color: #aaa;
+        }
+        button {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            background-color: darkorchid;
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 30px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover,
+        button:focus-visible {
+            background-color: rgb(59, 42, 77);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto 20px auto;
+        }
+        th {
+            color: darkorchid;
+            border-bottom: 2px solid darkorchid;
+            padding: 10px;
+        }
+        td {
+            border-bottom: 1px solid pink;
+            padding: 10px;
+        }
+        del {
+            color: gray;
+        }
+        strong {
+            color: darkorchid;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid pink;
+        }
+        article {
+            border: 2px solid darkorchid;
+            border-radius: 15px;
+            padding: 15px;
+            margin: 15px 0;
+            box-shadow: 0 3px 8px pink;
+        }
+        article p {
+            margin: 0;
+        }
+        details {
+            text-align: left;
+            border-bottom: 1px solid pink;
+            padding: 12px 0;
+        }
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: darkorchid;
+        }
+        details p {
+            margin: 10px 0 0 0;
+        }
+        footer {
+            background-color: darkorchid;
+            color: white;
+            padding: 30px 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            * { transition: none !important; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PetLove</h1>
+        <nav>
+            <a href="#agenda">Agenda</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#ofertas">Ofertas</a>
+            <a href="#campanhas">Campanhas</a>
+            <a href="#duvidas">Dúvidas frequentes</a>
+            <a href="#estoque">Estoque</a>
+            <a href="index-1.html">Sair</a>
+        </nav>
+    </header>
+
+    <main>
+        <!--agenda de horarios-->
+        <section id="agenda">
+            <h2>Agenda de horários</h2>
+            <p>Escolha o serviço, o dia e o horário do atendimento.</p>
+            <form>
+                <fieldset>
+                    <legend>Serviço</legend>
+                    <label><input type="radio" name="servico" value="veterinario" checked> Veterinário</label>
+                    <label><input type="radio" name="servico" value="banho-tosa"> Banho e tosa</label>
+                </fieldset>
+
+                <p>
+                    <label for="nomePet">Nome do pet:</label>
+                    <input type="text" id="nomePet" name="nomePet" required>
+                </p>
+                <p>
+                    <label for="dataAtendimento">Data:</label>
+                    <input type="date" id="dataAtendimento" name="dataAtendimento" required>
+                </p>
+                <p>
+                    <label for="horario">Horário:</label>
+                    <select id="horario" name="horario" required>
+                        <option value="">Escolha um horário</option>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                    </select>
+                </p>
+                <button type="submit">Confirmar agendamento</button>
+            </form>
+        </section>
+
+        <!--produtos a venda-->
+        <section id="produtos">
+            <h2>Produtos à venda</h2>
+            <p>Escolha a quantidade e depois diga se prefere retirar na loja ou receber em casa. Produtos esgotados ou que ainda não chegaram não podem ser pedidos.</p>
+            <form>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Produto</th>
+                            <th scope="col">Preço</th>
+                            <th scope="col">Quantidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ração para cães 10 kg</td>
+                            <td>R$ 139,90</td>
+                            <td><input type="number" name="qtdRacaoCao" min="0" value="0" aria-label="Quantidade de ração para cães 10 kg"></td>
+                        </tr>
+                        <tr>
+                            <td>Ração para gatos 3 kg</td>
+                            <td><del>R$ 74,90</del> <strong>R$ 64,90</strong></td>
+                            <td><input type="number" name="qtdRacaoGato" min="0" value="0" aria-label="Quantidade de ração para gatos 3 kg"></td>
+                        </tr>
+                        <tr>
+                            <td>Shampoo neutro</td>
+                            <td><del>R$ 29,90</del> <strong>R$ 24,90</strong></td>
+                            <td><input type="number" name="qtdShampoo" min="0" value="0" aria-label="Quantidade de shampoo neutro"></td>
+                        </tr>
+                        <tr>
+                            <td>Bolinha de borracha</td>
+                            <td>R$ 12,50</td>
+                            <td><input type="number" name="qtdBolinha" min="0" value="0" aria-label="Quantidade de bolinha de borracha"></td>
+                        </tr>
+                        <tr>
+                            <td>Antipulgas (esgotado)</td>
+                            <td>R$ 89,00</td>
+                            <td><input type="number" name="qtdAntipulgas" min="0" value="0" disabled aria-label="Quantidade de antipulgas"></td>
+                        </tr>
+                        <tr>
+                            <td>Coleira ajustável (chega em breve)</td>
+                            <td>R$ 34,90</td>
+                            <td><input type="number" name="qtdColeira" min="0" value="0" disabled aria-label="Quantidade de coleira ajustável"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <fieldset>
+                    <legend>Como quer receber?</legend>
+                    <label><input type="radio" name="entrega" value="retirada" checked> Retirar na loja</label>
+                    <label><input type="radio" name="entrega" value="entrega"> Receber em casa</label>
+                </fieldset>
+                <p>
+                    <label for="endereco">Endereço (só para entrega):</label>
+                    <input type="text" id="endereco" name="endereco">
+                </p>
+                <button type="submit">Finalizar pedido</button>
+            </form>
+        </section>
+
+        <!--ofertas-->
+        <section id="ofertas">
+            <h2>Ofertas</h2>
+            <p>Produtos em promoção.</p>
+            <ul>
+                <li>Ração para gatos 3 kg: de <del>R$ 74,90</del> por <strong>R$ 64,90</strong></li>
+                <li>Shampoo neutro: de <del>R$ 29,90</del> por <strong>R$ 24,90</strong></li>
+            </ul>
+        </section>
+
+        <!--campanhas-->
+        <section id="campanhas">
+            <h2>Campanhas e eventos</h2>
+            <p>Abertos ao público, aos animais e aos tutores.</p>
+            <article>
+                <h3>Vacinação antirrábica gratuita</h3>
+                <p>Sábado, das 9h às 12h. Traga a carteirinha do seu pet.</p>
+            </article>
+            <article>
+                <h3>Feira de adoção</h3>
+                <p>Domingo, das 10h às 16h. Cães e gatos à procura de uma família.</p>
+            </article>
+            <article>
+                <h3>Dia do banho solidário</h3>
+                <p>Último sábado do mês. Parte do valor vai para um abrigo parceiro.</p>
+            </article>
+        </section>
+
+        <!--duvidas frequentes-->
+        <section id="duvidas">
+            <h2>Dúvidas frequentes</h2>
+            <details>
+                <summary>Como marco uma consulta ou um banho?</summary>
+                <p>Na seção Agenda, escolha o serviço, a data e o horário e confirme.</p>
+            </details>
+            <details>
+                <summary>Posso retirar meu pedido na loja?</summary>
+                <p>Sim. Ao finalizar o pedido, escolha "Retirar na loja" ou "Receber em casa".</p>
+            </details>
+            <details>
+                <summary>O site tem acesso à minha conta bancária?</summary>
+                <p>Não. Nenhum pagamento é feito sem a sua autorização e o site não acessa contas bancárias.</p>
+            </details>
+        </section>
+
+        <!--estoque-->
+        <section id="estoque">
+            <h2>Estoque</h2>
+            <p>Veja o que tem na loja, o que acabou e o que está para chegar.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Situação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Ração para cães 10 kg</td><td>Disponível</td></tr>
+                    <tr><td>Ração para gatos 3 kg</td><td>Disponível</td></tr>
+                    <tr><td>Shampoo neutro</td><td>Disponível</td></tr>
+                    <tr><td>Bolinha de borracha</td><td>Disponível</td></tr>
+                    <tr><td>Antipulgas</td><td>Esgotado</td></tr>
+                    <tr><td>Coleira ajustável</td><td>Chega em breve</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>PetLove. Em caso de dúvida, fale com a nossa equipe na loja.</p>
+    </footer>
+</body>
+</html>
